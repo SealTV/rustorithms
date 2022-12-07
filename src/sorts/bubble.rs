@@ -1,4 +1,8 @@
-pub fn bubble_sort (a: &mut [u32]) -> &[u32] {
+#[cfg(test)]
+#[path ="./bubble_tests.rs"]
+mod bubble_tests;
+
+pub fn bubble_sort (a: &mut [i32]) -> &[i32] {
     let mut n = a.len();
     loop {
         let mut swapped = false;
