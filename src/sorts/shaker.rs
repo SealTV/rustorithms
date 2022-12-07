@@ -1,5 +1,5 @@
 #[allow(dead_code)]
-pub fn shaker_sort(a: &mut [i32]) -> &mut [i32] {
+pub fn sort(a: &mut [i32]) -> &mut [i32] {
     let mut b = true;
 
     let mut beg = 0;
@@ -53,7 +53,7 @@ mod tests {
     #[test]
     fn shaker_sort_test() {
         let mut a: [i32; 5] = [5, 1, 3, 4, 2];
-        let a = shaker_sort(&mut a[..]);
+        let a = sort(&mut a[..]);
         assert_eq!(a, [1, 2, 3, 4, 5])
     }
 }

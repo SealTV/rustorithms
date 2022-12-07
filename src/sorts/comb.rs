@@ -1,4 +1,4 @@
-pub fn comb_sort(a: &mut [i32]) -> &mut [i32] {
+pub fn sort(a: &mut [i32]) -> &mut [i32] {
     let k = 1.2473309;
 
     
@@ -42,7 +42,7 @@ mod tests {
     #[test]
     fn comb_sort_test() {
         let mut a: [i32; 5] = [5, 1, 3, 4, 2];
-        let a = comb_sort(&mut a[..]);
+        let a = sort(&mut a[..]);
         assert_eq!(a, [1, 2, 3, 4, 5])
     }
 }
